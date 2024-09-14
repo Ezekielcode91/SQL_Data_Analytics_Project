@@ -25,15 +25,14 @@ NOTE: If you are having issues with permissions. And you get error:
 
 -- NOTE: This has been updated from the video to fix issues with encoding
 
-USE sql_course;
+
 
 LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 9.0/Uploads/company_dim.csv'
 INTO TABLE company_dim
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
-IGNORE 1 LINES
-IGNORE;
+IGNORE 1 LINES;
 
 LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 9.0/Uploads/skills_dim.csv'
 INTO TABLE skills_dim
